@@ -1,0 +1,13 @@
+application: newrot13
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: final.app
+
+libraries:
+- name: jinja2
+  version: latest
